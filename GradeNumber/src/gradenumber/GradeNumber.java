@@ -17,24 +17,22 @@ public class GradeNumber {
         if(grade > 100){
             System.out.println(grade+" is invalide");
         }
-        else if(grade >= 80){
-            System.out.println(grade+" is A+ Grade");
-        }
-        else if(grade >= 70){
+        else if(grade >= 90){
             System.out.println(grade+" is A Grade");
         }
-        else if(grade >= 60){
-            System.out.println(grade+" is A- Grade");
-        }
-        else if(grade >= 50){
+        else if(grade >= 80){
             System.out.println(grade+" is B Grade");
         }
-        else if(grade >= 40){
+        else if(grade >= 70){
             System.out.println(grade+" is C Grade");
         }
-        else if(grade >= 33){
+        else if(grade >= 60){
             System.out.println(grade+" is D Grade");
         }
+        else if(grade < 60){
+            System.out.println(grade+" is F Grade");
+        }
+       
         else{
             System.err.println(grade+" is F Grade");
             

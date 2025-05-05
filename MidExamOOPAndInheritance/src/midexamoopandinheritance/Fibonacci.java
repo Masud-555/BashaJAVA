@@ -23,7 +23,7 @@ public class Fibonacci {
          System.out.println(num1);
          System.out.println(num2);
          
-         System.out.println("");
+         
          for(int i =3; i <= input; i++){
          sum = num1+num2;
              System.out.println(sum);

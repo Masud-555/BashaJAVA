@@ -44,7 +44,7 @@ public class students {
 
     @Override
     public String toString() {
-        return "\n \n studentID :"+studentID+ ", \n name=" + name + ", \n email=" + email ;
+        return "\n \n studentID : "+studentID+ " \n name : " + name + "\n email : " + email ;
     }
     
     

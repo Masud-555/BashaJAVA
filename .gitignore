@@ -30,3 +30,8 @@
 /MidExamOOPAndInheritance/build/
 /MapSetAndListMethodse/nbproject/private/
 /MapSetAndListMethodse/build/
+NetBeans-17/netbeans/java/modules/org-netbeans-modules-hudson-maven.jar
+*.jar
+*.exe
+*.dat
+*.dll

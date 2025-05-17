@@ -9,7 +9,7 @@ public class OOPExamPractice {
         
         Manager mang = new Manager();
         
-        mang.
+        
         
     }
 }

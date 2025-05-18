@@ -38,6 +38,15 @@ public class PosView extends javax.swing.JFrame {
         jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        jTabbedPane2 = new javax.swing.JTabbedPane();
+        jTabbedPane3 = new javax.swing.JTabbedPane();
+        jTabbedPane4 = new javax.swing.JTabbedPane();
+        jTabbedPane5 = new javax.swing.JTabbedPane();
+        jTabbedPane6 = new javax.swing.JTabbedPane();
+        jTabbedPane7 = new javax.swing.JTabbedPane();
+        jTabbedPane8 = new javax.swing.JTabbedPane();
+        jTabbedPane9 = new javax.swing.JTabbedPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1353, 720));
@@ -65,21 +74,21 @@ public class PosView extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(204, 204, 255));
 
-        jButton1.setText("jButton1");
+        jButton1.setText("1");
 
-        jButton2.setText("jButton1");
+        jButton2.setText("2");
 
-        jButton3.setText("jButton1");
+        jButton3.setText("4");
 
-        jButton4.setText("jButton1");
+        jButton4.setText("3");
 
-        jButton5.setText("jButton1");
+        jButton5.setText("7");
 
-        jButton6.setText("jButton1");
+        jButton6.setText("8");
 
-        jButton7.setText("jButton1");
+        jButton7.setText("6");
 
-        jButton8.setText("jButton1");
+        jButton8.setText("5");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -121,6 +130,17 @@ public class PosView extends javax.swing.JFrame {
         );
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 190, 620));
+
+        jTabbedPane1.addTab("tab1", jTabbedPane2);
+        jTabbedPane1.addTab("tab2", jTabbedPane3);
+        jTabbedPane1.addTab("tab3", jTabbedPane4);
+        jTabbedPane1.addTab("tab4", jTabbedPane5);
+        jTabbedPane1.addTab("tab5", jTabbedPane6);
+        jTabbedPane1.addTab("tab6", jTabbedPane7);
+        jTabbedPane1.addTab("tab7", jTabbedPane8);
+        jTabbedPane1.addTab("tab8", jTabbedPane9);
+
+        jPanel1.add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 100, 1170, 620));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -185,5 +205,14 @@ public class PosView extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTabbedPane jTabbedPane2;
+    private javax.swing.JTabbedPane jTabbedPane3;
+    private javax.swing.JTabbedPane jTabbedPane4;
+    private javax.swing.JTabbedPane jTabbedPane5;
+    private javax.swing.JTabbedPane jTabbedPane6;
+    private javax.swing.JTabbedPane jTabbedPane7;
+    private javax.swing.JTabbedPane jTabbedPane8;
+    private javax.swing.JTabbedPane jTabbedPane9;
     // End of variables declaration//GEN-END:variables
 }

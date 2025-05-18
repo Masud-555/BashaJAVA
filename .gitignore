@@ -35,3 +35,6 @@ NetBeans-17/netbeans/java/modules/org-netbeans-modules-hudson-maven.jar
 *.exe
 *.dat
 *.dll
+/JavaApplication1/nbproject/private/
+/POS/nbproject/private/
+/POS/build/

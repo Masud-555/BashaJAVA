@@ -4,12 +4,19 @@
  */
 package view;
 
+import dao.CustomerDao;
+import java.beans.Customizer;
+import util.DatabaseUtil;
+
 /**
  *
  * @author Admin
  */
 public class PosView extends javax.swing.JFrame {
-
+    
+    DatabaseUtil util= new DatabaseUtil();
+    CustomerDao customerDao = new CustomerDao();
+    
     /**
      * Creates new form PosView
      */
@@ -364,7 +371,7 @@ public class PosView extends javax.swing.JFrame {
         jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel15.setText("Address");
         jPanel5.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 230, 70, 20));
-        jPanel5.add(txtCustomerAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 230, 180, -1));
+        jPanel5.add(txtCustomerAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 230, 330, -1));
 
         btnCustomerReset.setText("Reset");
         btnCustomerReset.addActionListener(new java.awt.event.ActionListener() {
@@ -375,6 +382,11 @@ public class PosView extends javax.swing.JFrame {
         jPanel5.add(btnCustomerReset, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 310, -1, -1));
 
         btnCustomerSave.setText("Save");
+        btnCustomerSave.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnCustomerSaveMouseClicked(evt);
+            }
+        });
         jPanel5.add(btnCustomerSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 310, -1, -1));
 
         btnCustomerEdit.setText("Edit");
@@ -550,6 +562,18 @@ public class PosView extends javax.swing.JFrame {
     private void btnCustomerDeletActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCustomerDeletActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnCustomerDeletActionPerformed
+
+    private void btnCustomerSaveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCustomerSaveMouseClicked
+        // TODO add your handling code here:
+        
+        String name = txtCustomerName.getText().trim();
+        String email = txtCustomerEmail.getText().trim();
+        String cell = txtCustomerCellPhone.getText().trim();
+        String address = txtCustomerAddress.getText().trim();
+        
+        
+        customerDao.saveCustomer(name, email, cell, address);
+    }//GEN-LAST:event_btnCustomerSaveMouseClicked
 
     /**
      * @param args the command line arguments

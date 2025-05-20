@@ -15,7 +15,7 @@ import util.DatabaseUtil;
 public class PosView extends javax.swing.JFrame {
     
     DatabaseUtil util= new DatabaseUtil();
-    CustomerDao customerDao = new CustomerDao();
+    CustomerDao cusd = new CustomerDao();
     
     /**
      * Creates new form PosView
@@ -572,7 +572,8 @@ public class PosView extends javax.swing.JFrame {
         String address = txtCustomerAddress.getText().trim();
         
         
-        customerDao.saveCustomer(name, email, cell, address);
+        cusd.saveCustomer(name, email, cell, address);
+        
     }//GEN-LAST:event_btnCustomerSaveMouseClicked
 
     /**

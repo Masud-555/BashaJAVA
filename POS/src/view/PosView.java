@@ -22,6 +22,7 @@ public class PosView extends javax.swing.JFrame {
      */
     public PosView() {
         initComponents();
+        
     }
 
     /**
@@ -229,7 +230,7 @@ public class PosView extends javax.swing.JFrame {
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 618, Short.MAX_VALUE)
+            .addGap(0, 650, Short.MAX_VALUE)
         );
 
         tabHome.addTab("tab1", jPanel4);
@@ -379,7 +380,7 @@ public class PosView extends javax.swing.JFrame {
                 btnCustomerResetActionPerformed(evt);
             }
         });
-        jPanel5.add(btnCustomerReset, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 310, -1, -1));
+        jPanel5.add(btnCustomerReset, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 310, -1, -1));
 
         btnCustomerSave.setText("Save");
         btnCustomerSave.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -387,10 +388,10 @@ public class PosView extends javax.swing.JFrame {
                 btnCustomerSaveMouseClicked(evt);
             }
         });
-        jPanel5.add(btnCustomerSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 310, -1, -1));
+        jPanel5.add(btnCustomerSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 310, -1, -1));
 
         btnCustomerEdit.setText("Edit");
-        jPanel5.add(btnCustomerEdit, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 310, -1, -1));
+        jPanel5.add(btnCustomerEdit, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 310, -1, -1));
 
         btnCustomerDelet.setText("Delet");
         btnCustomerDelet.addActionListener(new java.awt.event.ActionListener() {
@@ -398,7 +399,7 @@ public class PosView extends javax.swing.JFrame {
                 btnCustomerDeletActionPerformed(evt);
             }
         });
-        jPanel5.add(btnCustomerDelet, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 310, -1, -1));
+        jPanel5.add(btnCustomerDelet, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 310, -1, -1));
 
         tblCustomer.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -427,7 +428,7 @@ public class PosView extends javax.swing.JFrame {
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 618, Short.MAX_VALUE)
+            .addGap(0, 650, Short.MAX_VALUE)
         );
 
         tabSuppliers.addTab("tab1", jPanel6);
@@ -442,7 +443,7 @@ public class PosView extends javax.swing.JFrame {
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 618, Short.MAX_VALUE)
+            .addGap(0, 650, Short.MAX_VALUE)
         );
 
         tabCategory.addTab("tab1", jPanel7);
@@ -457,7 +458,7 @@ public class PosView extends javax.swing.JFrame {
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 618, Short.MAX_VALUE)
+            .addGap(0, 650, Short.MAX_VALUE)
         );
 
         tabPurchase.addTab("tab1", jPanel8);
@@ -472,7 +473,7 @@ public class PosView extends javax.swing.JFrame {
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 618, Short.MAX_VALUE)
+            .addGap(0, 650, Short.MAX_VALUE)
         );
 
         tabSales.addTab("tab1", jPanel9);
@@ -487,7 +488,7 @@ public class PosView extends javax.swing.JFrame {
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 618, Short.MAX_VALUE)
+            .addGap(0, 650, Short.MAX_VALUE)
         );
 
         tabStock.addTab("tab1", jPanel10);

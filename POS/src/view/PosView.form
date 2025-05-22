@@ -240,7 +240,7 @@
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="618" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="650" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                   </Layout>
@@ -630,7 +630,7 @@
                     <Component class="javax.swing.JTextField" name="txtCustomerAddress">
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="500" y="230" width="180" height="-1"/>
+                          <AbsoluteConstraints x="500" y="230" width="330" height="-1"/>
                         </Constraint>
                       </Constraints>
                     </Component>
@@ -643,7 +643,7 @@
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="600" y="310" width="-1" height="-1"/>
+                          <AbsoluteConstraints x="770" y="310" width="-1" height="-1"/>
                         </Constraint>
                       </Constraints>
                     </Component>
@@ -651,9 +651,12 @@
                       <Properties>
                         <Property name="text" type="java.lang.String" value="Save"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnCustomerSaveMouseClicked"/>
+                      </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="60" y="310" width="-1" height="-1"/>
+                          <AbsoluteConstraints x="140" y="310" width="-1" height="-1"/>
                         </Constraint>
                       </Constraints>
                     </Component>
@@ -663,7 +666,7 @@
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="240" y="310" width="-1" height="-1"/>
+                          <AbsoluteConstraints x="350" y="310" width="-1" height="-1"/>
                         </Constraint>
                       </Constraints>
                     </Component>
@@ -676,7 +679,7 @@
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="410" y="310" width="-1" height="-1"/>
+                          <AbsoluteConstraints x="560" y="310" width="-1" height="-1"/>
                         </Constraint>
                       </Constraints>
                     </Component>
@@ -738,7 +741,7 @@
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="618" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="650" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                   </Layout>
@@ -773,7 +776,7 @@
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="618" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="650" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                   </Layout>
@@ -808,7 +811,7 @@
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="618" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="650" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                   </Layout>
@@ -843,7 +846,7 @@
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="618" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="650" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                   </Layout>
@@ -878,7 +881,7 @@
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="618" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="650" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                   </Layout>

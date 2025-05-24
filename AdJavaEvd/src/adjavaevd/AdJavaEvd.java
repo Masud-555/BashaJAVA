@@ -12,20 +12,34 @@ import util.DbUtil;
 
 public class AdJavaEvd {
     
-    DbUtil du = new DbUtil();
+    static DbUtil du = new DbUtil();
     static PreparedStatement ps;
     static String sql ="";
    
     public static void main(String[] args) {
        
-                 
+        saveStudent("Masud", "masud@gmail.com");
+        System.out.println("After Save");
+        showAllStudent();
+        System.out.println("---------------------------");
+        
+        updateStudent("AA Masud", "Masud@gmail.com", 101);
+        System.out.println("After Update");
+        showAllStudent();
+        System.out.println("---------------------------");
+        
+        deleteStudent(1);
+        System.out.println("After Delet");
+        showAllStudent();
+        System.out.println("---------------------------");
         
     }
     
-    public void saveStudent(String name, String email){
+    public static void saveStudent(String name, String email){
         sql="insert into student(name, email) values(?,?)";
         try {
             ps =du.getCon().prepareStatement(sql);
+            
             ps.setString(1, name);
             ps.setString(2, email);
             
@@ -41,9 +55,9 @@ public class AdJavaEvd {
     
     }
     
-    public void showAllStudent(){
+    public static void showAllStudent(){
     
-    sql="select * from stident";
+    sql="select * from student";
         try {
             ps=du.getCon().prepareStatement(sql);
             
@@ -67,9 +81,9 @@ public class AdJavaEvd {
     
     }
     
-    public void deleteStudent(int id){
+    public static void deleteStudent(int id){
     
-        sql ="delet from student where id=?";
+        sql ="delete from student where id=?";
         try {
             ps=du.getCon().prepareStatement(sql);
             ps.setInt(1, id);
@@ -84,11 +98,21 @@ public class AdJavaEvd {
         }    
     }
     
-    public void updateStudent(int id){
+    public static void updateStudent(String name, String email,int id){
         sql="update student set name=?, email=? where id=?";
         
         try {
             ps=du.getCon().prepareStatement(sql);
+            
+             ps.setString(1, name);
+            ps.setString(2, email);
+            ps.setInt(3, id);
+            
+             ps.executeUpdate();
+            
+            ps.close();
+            du.getCon().close();
+            
         } catch (SQLException ex) {
             Logger.getLogger(AdJavaEvd.class.getName()).log(Level.SEVERE, null, ex);
         }          

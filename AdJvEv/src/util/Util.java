@@ -1,4 +1,3 @@
-
 package util;
 
 
@@ -7,6 +6,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 
 
 public class Util {
@@ -18,19 +18,16 @@ public class Util {
     private String driver ="com.mysql.cj.jdbc.Driver";
     
     
-    public Connection getCon() throws ClassNotFoundException{
+    public Connection getCon(){
     
-        Class.forName(driver);
         try {
-            c=DriverManager.getConnection(url, user, password);
+            Class.forName(driver);
+            c = DriverManager.getConnection(url, user, password);
             
-            
-        } catch (SQLException ex) {
+        } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(Util.class.getName()).log(Level.SEVERE, null, ex);
         }
-        return c;
-    
-    }
-    
-    
+   
+      return c;
+    }  
 }
